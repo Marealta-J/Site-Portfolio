@@ -1,19 +1,27 @@
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-Bold.woff2') format('woff2'),
-         url('Gilroy-Bold.woff') format('woff'),
-         url('Gilroy-Bold.ttf') format('truetype');
+    font-family: 'GilroyB';
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+         url('../fonts/Gilroy-Bold.woff') format('woff'),
+         url('../fonts/Gilroy-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
-
-
-
-
+@font-face {
+    font-family: 'GilroyM';
+    src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+         url('../fonts/Gilroy-Medium.woff') format('woff'),
+         url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+body{
+    font-family: 'GilroyB';
+    font-size: 18px;
+    line-height: 22px;
+}
 html{
     box-sizing: border-box;
     background-color: #FFF;
-    
 }
 a{
     color: #828282;
@@ -24,17 +32,90 @@ a{
     margin: 0 auto;
     padding: 0 250px;
 }
+.menu{
+    padding: 32px 0;
+}
 .menu ul{
     display: flex;
     justify-content: space-between;
 }
-
 .menu li{
     list-style: none;
     display: inline;
-
-
 }
 .menu a{
     text-decoration: none;
+}
+.myContacts{
+    margin: 40px 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+p.name{
+    font-size: 47.3392px;
+    line-height: 59px;
+    height: 117px;
+    width: 205px;
+}
+p.aboutMe{
+    font-family: 'GilroyM';
+    height: 50px;
+    width: 240px;
+}
+.language{
+    transform: rotate(270deg);
+}
+.headerImg{
+    background-repeat: no-repeat;
+    width: 943.61px;
+    height: 387px;
+    background-image: url(../images/BSPP2266.jpg);
+    padding-bottom: 100px;
+}
+div.aboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 50px 0;
+    background-color: #F6F6F6;
+}
+.aboutMeText{
+    font-family: 'GilroyM';
+    text-align: center;
+    width: 460px;
+    height: 200px;    
+}
+p.title{
+    font-size: 34px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+.skills{
+    padding: 100px 0;
+}
+.skillsText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'GilroyM';
+}
+.skillsText p.txt{
+    font-family: 'GilroyB';
+    font-size: 34px;
+    line-height: 42px;
+    padding-bottom: 70px;
+}
+.skillsCard{
+    margin: 80px 0;
+
+}
+img.icons{
+    height: 100px;
+    width: 90px;
+}
+.logo{
+    display: flex;
 }
