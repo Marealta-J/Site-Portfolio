@@ -94,7 +94,7 @@ p.title{
     margin-bottom: 20px;
 }
 .skills{
-    padding: 100px 0;
+    padding: 70px 0;
 }
 .skillsText{
     display: flex;
@@ -110,6 +110,9 @@ p.title{
 }
 .skillsCard{
     margin: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #828282;
 
 }
 img.icons{
@@ -117,5 +120,34 @@ img.icons{
     width: 90px;
 }
 .logo{
-    display: flex;
+    width: 170px;
+    height: 210px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
+div.logo p{
+    margin: 20px 0;
+}
+img.stars{
+    margin-top: 10px;
+}
+.Portfolio{
+    background-color: #F6F6F6;
+    padding: 70px 0;
+}
+.portfolioTxt{
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+}
+.portfolioBlock{
+    margin-top: 70px;
+}
+.portfolioBlock p{
+    font-family: 'GilroyM';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 40px;
 }
