@@ -24,7 +24,8 @@ html{
     background-color: #FFF;
 }
 a{
-    color: #828282;
+    color: #828282;|
+
 }
 .container{
     max-width: 1445px;
@@ -33,31 +34,41 @@ a{
     padding: 0 250px;
 }
 .menu{
-    /* align-items: center; */
-    height: 100px;
+    text-align: center;
     width: 100%;
     top: 0;
     position: fixed;
     background-color: #FFF;
 }
-
-
+.menuNav{
+    display: inline-block;
+    padding: 30px 0 10px 0;
+}
 .menuNav div{
     float: left;
-    display: block;
+    display: inline-block;
     width: 188px;
     height: 30px;
-    border-bottom: 1px solid #c2c0c0;
     margin: 2px;
     padding: 0;
     margin: 0;
     text-align: center;
 }
-.menuNav div:hover{
-    border-bottom: 1px solid black;
-    color: black;
+.menuNav div::after{
+    margin-top: 10px;
+    background-color:  black;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
 }
-
+.menuNav div:hover::after,
+.menuNav div:focus::after{
+    width: 100%;
+}
 .menu a{
     text-decoration: none;
 }
@@ -167,5 +178,40 @@ img.stars{
     text-align: center;
     margin-top: 40px;
 }
+.contact{
+    text-align: center;
+    padding: 100px 0;
+}
+.contact p{
+    font-family: 'GilroyM';
+}
+.contact h4{
+    font-size: 34px;
+    line-height: 42px;
+}
+.SMFooter{
+    width: 180px;
+    height: 40px;
+    color: #fff;
+    background-color: black;
+    border-radius: 50px;
+}
 
-
+.SMFooter:hover{
+    color: black;
+    background-color: white;
+    
+}
+.WhantToKnow{
+    margin: 20px 0 30px 0;
+}
+.contactIcons{
+    width: 350px;
+    margin: 80px auto 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.likeMe{
+    font-size: 14px;
+    line-height: 17px;
+}
