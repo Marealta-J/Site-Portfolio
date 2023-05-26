@@ -97,9 +97,10 @@ p.aboutMe{
     background-repeat: no-repeat;
     width: 943.61px;
     height: 387px;
-    background-image: url(../images/BSPP2266.jpg);
+    background-image: url(../images/project.jpg);
     padding-bottom: 100px;
 }
+
 div.aboutMe{
     display: flex;
     justify-content: center;
